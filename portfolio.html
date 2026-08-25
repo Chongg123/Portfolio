@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO & Social Meta Tags -->
+  <title>Kurt Christian Espero — BSIT Student & Vibe Coding Technologist</title>
+  <meta name="description"
+    content="Portfolio of Kurt Christian Espero, a BSIT student who embraces the art of vibe coding, mobile applications, database-driven web dashboards, and AI-driven tech.">
+  <meta name="keywords"
+    content="Kurt Christian Espero, BSIT Student, Vibe Coding, Library System, Electricity Billing System, SKLink, Full-Stack, Mobile Apps, Web Dashboards, UI Design">
+  <meta name="author" content="Kurt Christian Espero">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Kurt Christian Espero — BSIT Student & Vibe Coder">
+  <meta property="og:description"
+    content="Hi, I'm Kurt Christian Espero, a BSIT student who embraces the art of vibe coding and building clean, functional multi-platform tech.">
+  <meta property="og:image" content="./assets/avatar.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon Icon (SVG Hologram) -->
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%2306070a' stroke='%2300f0ff' stroke-width='6'/><path d='M30 65 L50 25 L70 65 L55 65 L50 48 L45 65 Z' fill='%2300f0ff'/></svg>">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <!-- Custom Magnetic Cursor -->
+  <div class="custom-cursor-dot"></div>
+  <div class="custom-cursor-outline"></div>
+
+  <!-- Ambient Glow & Cyber Grid -->
+  <div class="ambient-bg-grid"></div>
+
+  <!-- Top Navigation -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo" id="nav-brand">
+        <div class="logo-badge">KE</div>
+        <span class="brand-text">Kurt Christian Espero</span>
+        <span class="brand-tag">Online 🟢</span>
+      </a>
+
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="#about" class="nav-link"><span class="nav-link-num">01.</span> About Me</a></li>
+          <li><a href="#projects" class="nav-link"><span class="nav-link-num">02.</span> Projects</a></li>
+          <li><a href="#skills" class="nav-link"><span class="nav-link-num">03.</span> Toolkit</a></li>
+          <li><a href="#experience" class="nav-link"><span class="nav-link-num">04.</span> Journey</a></li>
+          <li><a href="#contact" class="nav-link"><span class="nav-link-num">05.</span> Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="cmd-k-btn cmd-k-trigger" id="header-cmd-btn" aria-label="Open Command Palette">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <span>Quick Menu</span>
+          <span class="cmd-kbd">Ctrl K</span>
+        </button>
+
+        <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Toggle Navigation Menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO / INTRODUCE YOURSELF SECTION -->
+    <section class="hero-section" id="hero">
+      <canvas id="hero-canvas"></canvas>
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="status-pill">
+            <span class="pulse-dot"></span>
+            <span>👋 BSIT STUDENT & VIBE CODING PRACTITIONER</span>
+          </div>
+
+          <p class="hero-subtitle scramble-text" data-original="HELLO WORLD! I'M KURT CHRISTIAN ESPERO">HELLO WORLD! I'M
+            KURT CHRISTIAN ESPERO</p>
+
+          <h1 class="hero-title">
+            Directing projects with <br>
+            <span class="text-gradient">vibe coding</span> & clean, <br>
+            stress-free tech.
+          </h1>
+
+          <p class="hero-desc">
+            Hi, I'm Kurt Christian Espero, a BSIT student who embraces the art of vibe coding. I focus on project
+            direction and natural language prompt architecture to guide AI across mobile apps, database dashboards, and
+            multi-platform solutions.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary" id="hero-explore-btn">
+              <span>View My Projects</span>
+              <span class="btn-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </span>
+            </a>
+            <a href="#contact" class="btn btn-secondary" id="hero-contact-btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+              </svg>
+              <span>Connect With Me</span>
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <div class="stat-number">BSIT<span>🎓</span></div>
+              <div class="stat-label">IT Student</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">3<span>🔥</span></div>
+              <div class="stat-label">Featured Systems</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">100<span>%</span></div>
+              <div class="stat-label">Vibe Driven</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hologram-card-wrapper">
+            <div class="hologram-card tilt-element">
+              <div class="hologram-img-box">
+                <img src="./assets/avatar.jpg" alt="Kurt Christian Espero — Profile Portrait" loading="eager">
+                <div class="hologram-scanline"></div>
+              </div>
+              <div class="hologram-card-footer">
+                <div class="developer-identity">
+                  <h4>Kurt Christian Espero</h4>
+                  <p>BSIT Student & Vibe Coder</p>
+                </div>
+                <div class="tech-stack-badges">
+                  <span class="tech-mini-pill">VibeCode</span>
+                  <span class="tech-mini-pill">Database</span>
+                  <span class="tech-mini-pill">Web</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT ME / MY STORY SECTION -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">01 // Who I Am</span>
+          <h2 class="section-title">About <span class="text-gradient">Kurt Christian Espero</span></h2>
+          <p class="section-desc">Blending project vision, AI prompt engineering, and multi-platform development.</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Story Card with exact user requested text -->
+          <div class="glass-card">
+            <h3>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+              My Philosophy & Approach
+            </h3>
+
+            <p style="font-size: 1.05rem; line-height: 1.85; color: #f1f5f9;">
+              Hi, I'm <strong>Kurt Christian Espero</strong>, a BSIT student who embraces the art of vibe coding. For
+              me, development isn't just about syntax—it's about focusing on the overall direction of a project and
+              using natural language prompts to guide AI in generating the code.
+            </p>
+            <p style="font-size: 1.05rem; line-height: 1.85; color: #cbd5e1;">
+              I build across multiple platforms, from developing mobile applications to database-driven web dashboards.
+              Whether I'm setting up networks, designing intuitive UI layouts, or refining AI-generated solutions, I
+              focus on building clean, functional tech without the stress.
+            </p>
+
+            <div class="interests-tags-wrap">
+              <span class="interest-pill">#VibeCoding</span>
+              <span class="interest-pill">#BSITStudent</span>
+              <span class="interest-pill">#PromptArchitecture</span>
+              <span class="interest-pill">#MobileApps</span>
+              <span class="interest-pill">#WebDashboards</span>
+              <span class="interest-pill">#StressFreeTech</span>
+            </div>
+          </div>
+
+          <!-- Quick Fast Facts & Values Card -->
+          <div class="glass-card">
+            <h3>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--secondary)" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 14 14"></polyline>
+              </svg>
+              Quick Profile & Strengths
+            </h3>
+
+            <div class="personal-facts-list">
+              <div class="fact-item">
+                <span class="fact-icon">🎓</span>
+                <div>
+                  <strong>Degree:</strong> Bachelor of Science in Information Technology (BSIT)
+                </div>
+              </div>
+              <div class="fact-item">
+                <span class="fact-icon">💡</span>
+                <div>
+                  <strong>Core Approach:</strong> Vibe Coding, High-Level Project Direction & AI Prompts
+                </div>
+              </div>
+              <div class="fact-item">
+                <span class="fact-icon">⚡</span>
+                <div>
+                  <strong>Focus:</strong> Clean, functional multi-platform tech without unnecessary friction
+                </div>
+              </div>
+            </div>
+
+            <div class="philosophy-grid">
+              <div class="phil-item">
+                <div class="phil-icon">📱</div>
+                <h4>Mobile & Web</h4>
+                <p>Developing responsive mobile apps and database-driven dashboards.</p>
+              </div>
+              <div class="phil-item">
+                <div class="phil-icon">🤖</div>
+                <h4>Vibe Coding</h4>
+                <p>Guiding AI through natural language prompts for rapid execution.</p>
+              </div>
+              <div class="phil-item">
+                <div class="phil-icon">🌐</div>
+                <h4>Networking & DBs</h4>
+                <p>Configuring solid network setups and relational database flows.</p>
+              </div>
+              <div class="phil-item">
+                <div class="phil-icon">🎨</div>
+                <h4>Intuitive UI</h4>
+                <p>Crafting accessible, human-centric, and modern user layouts.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS / WHAT I'VE BUILT (3 PROJECTS: LIBRARY, ELECTRICITY, SKLINK) -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">02 // Featured Projects</span>
+          <h2 class="section-title">Built Systems & <span class="text-gradient">Dashboards</span></h2>
+          <p class="section-desc">My 3 core projects: Library Management System, Electricity Billing System, and SKLink.
+          </p>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="project-filters">
+          <button class="filter-btn active" data-filter="all">All (3 Projects)</button>
+          <button class="filter-btn" data-filter="library">Library System</button>
+          <button class="filter-btn" data-filter="electricity">Electricity Billing</button>
+          <button class="filter-btn" data-filter="sklink">SKLink Portal</button>
+        </div>
+
+        <!-- Projects Grid (3 Projects) -->
+        <div class="projects-grid">
+
+          <!-- Project 1: Library System -->
+          <div class="project-card-container" data-category="library">
+            <div class="project-card tilt-element">
+              <div class="card-spotlight"></div>
+              <div class="project-thumbnail-wrapper">
+                <img src="./assets/project_library.jpg" alt="Library Management System Dashboard"
+                  class="project-thumbnail" loading="lazy">
+                <span class="project-overlay-badge">LIBRARY SYSTEM</span>
+              </div>
+              <div class="project-info">
+                <div class="project-category">Database & Management System</div>
+                <h3 class="project-title">Library Management System</h3>
+                <p class="project-summary">
+                  A digital library system for cataloging books, tracking student borrowing/returns, managing member
+                  records, and monitoring circulation telemetry.
+                </p>
+                <div class="project-tags">
+                  <span class="tech-tag">Book Catalog</span>
+                  <span class="tech-tag">MySQL</span>
+                  <span class="tech-tag">Barcode Scanning</span>
+                  <span class="tech-tag">JavaScript</span>
+                </div>
+                <div class="project-actions">
+                  <button class="view-case-study-btn" data-project="library">
+                    <span>Inspect Case Study</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                      stroke-width="2.5">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                  </button>
+                  <div class="project-ext-links">
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="icon-btn"
+                      aria-label="View Github Repository">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <path
+                          d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                        </path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: Electricity Billing System -->
+          <div class="project-card-container" data-category="electricity">
+            <div class="project-card tilt-element">
+              <div class="card-spotlight"></div>
+              <div class="project-thumbnail-wrapper">
+                <img src="./assets/project_electricity.jpg" alt="Electricity Billing System Dashboard"
+                  class="project-thumbnail" loading="lazy">
+                <span class="project-overlay-badge">BILLING SYSTEM</span>
+              </div>
+              <div class="project-info">
+                <div class="project-category">Utility & Consumption Dashboard</div>
+                <h3 class="project-title">Electricity Billing System</h3>
+                <p class="project-summary">
+                  A smart electricity utility billing portal featuring kilowatt-hour consumption monitoring, automated
+                  rate tier calculations, and invoice generation.
+                </p>
+                <div class="project-tags">
+                  <span class="tech-tag">kWh Metering</span>
+                  <span class="tech-tag">Invoice Engine</span>
+                  <span class="tech-tag">Database</span>
+                  <span class="tech-tag">REST APIs</span>
+                </div>
+                <div class="project-actions">
+                  <button class="view-case-study-btn" data-project="electricity">
+                    <span>Inspect Case Study</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                      stroke-width="2.5">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                  </button>
+                  <div class="project-ext-links">
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="icon-btn"
+                      aria-label="View Github Repository">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <path
+                          d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                        </path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: SKLink -->
+          <div class="project-card-container" data-category="sklink">
+            <div class="project-card tilt-element">
+              <div class="card-spotlight"></div>
+              <div class="project-thumbnail-wrapper">
+                <img src="./assets/project_sklink.jpg" alt="SKLink Youth Governance Portal Dashboard"
+                  class="project-thumbnail" loading="lazy">
+                <span class="project-overlay-badge">COMMUNITY PORTAL</span>
+              </div>
+              <div class="project-info">
+                <div class="project-category">Youth Governance & Linkage</div>
+                <h3 class="project-title">SKLink — Youth Governance Portal</h3>
+                <p class="project-summary">
+                  A community portal for the Sangguniang Kabataan to centralize youth announcements, streamline digital
+                  project requests, and manage registrations.
+                </p>
+                <div class="project-tags">
+                  <span class="tech-tag">Youth Profiling</span>
+                  <span class="tech-tag">Digital Forms</span>
+                  <span class="tech-tag">UI/UX Layouts</span>
+                  <span class="tech-tag">Mobile First</span>
+                </div>
+                <div class="project-actions">
+                  <button class="view-case-study-btn" data-project="sklink">
+                    <span>Inspect Case Study</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                      stroke-width="2.5">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                  </button>
+                  <div class="project-ext-links">
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="icon-btn"
+                      aria-label="View Github Repository">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <path
+                          d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                        </path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS & MY TOOLKIT -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">03 // My Toolkit</span>
+          <h2 class="section-title">Technologies & <span class="text-gradient">Platforms</span></h2>
+          <p class="section-desc">My tools for building mobile apps, database dashboards, networking setups, and AI
+            prompts.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Category 1 -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon-box">📱</div>
+              <h3>Mobile & Frontend UI</h3>
+            </div>
+            <div class="skill-items-list">
+              <div class="skill-bar-wrap">
+                <div class="skill-bar-info"><span>Mobile Application Dev</span><span>95%</span></div>
+                <div class="skill-track">
+                  <div class="skill-fill" data-width="95%"></div>
+                </div>
+              </div>
+              <div class="skill-bar-wrap">
+                <div class="skill-bar-info"><span>UI/UX Layouts & Wireframes</span><span>92%</span></div>
+                <div class="skill-track">
+                  <div class="skill-fill" data-width="92%"></div>
+                </div>
+              </div>
+              <div class="skill-bar-wrap">
+                <div class="skill-bar-info"><span>Web Dashboards (HTML / CSS / JS)</span><span>96%</span></div>
+                <div class="skill-track">
+                  <div class="skill-fill" data-width="96%"></div>
+                </div>
+              </div>
+              <div class="skill-bar-wrap">
+                <div class="skill-bar-info"><span>Interactive Motion & Canvas</span><span>88%</span></div>
+                <div class="skill-track">
+                  <div class="skill-fill" data-width="88%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2 -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon-box">🤖</div>
+              <h3>AI Direction & Vibe Coding</h3>
+            </div>
+            <div class="skill-items-list">
+              <div class="skill-bar-wrap">
+                <div class="skill-bar-info"><span>Natural Language Prompt Architecture</span><span>98%</span></div>
+                <div class="skill-track">
+                  <div class="skill-fill" data-width="98%"></div>
+                </div>
+              </div>
+              <div class="skill-bar-wrap">
+                <div class="skill-bar-info"><span>AI-Assisted Code Refinement</span><span>96%</span></div>
+                <div class="skill-track">
+                  <div class="skill-fill" data-width="96%"></div>
+                </div>
+              </div>
+              <div class="skill-bar-wrap">
+                <div class="skill-bar-info"><span>Multi-Platform Workflow Management</span><span>90%</span></div>
+                <div class="skill-track">
+                  <div class="skill-fill" data-width="90%"></div>
+                </div>
+              </div>
+              <div class="skill-bar-wrap">
+                <div class="skill-bar-info"><span>Rapid Prototyping & Iteration</span><span>95%</span></div>
+                <div class="skill-track">
+                  <div class="skill-fill" data-width="95%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 3 -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon-box">💾</div>
+              <h3>Databases & Networks</h3>
+            </div>
+            <div class="skill-items-list">
+              <div class="skill-bar-wrap">
+                <div class="skill-bar-info"><span>Database Design (SQL / Relational)</span><span>92%</span></div>
+                <div class="skill-track">
+                  <div class="skill-fill" data-width="92%"></div>
+                </div>
+              </div>
+              <div class="skill-bar-wrap">
+                <div class="skill-bar-info"><span>Network Setup & Troubleshooting</span><span>89%</span></div>
+                <div class="skill-track">
+                  <div class="skill-fill" data-width="89%"></div>
+                </div>
+              </div>
+              <div class="skill-bar-wrap">
+                <div class="skill-bar-info"><span>RESTful APIs & Data Ingestion</span><span>91%</span></div>
+                <div class="skill-track">
+                  <div class="skill-fill" data-width="91%"></div>
+                </div>
+              </div>
+              <div class="skill-bar-wrap">
+                <div class="skill-bar-info"><span>System Security Fundamentals</span><span>86%</span></div>
+                <div class="skill-track">
+                  <div class="skill-fill" data-width="86%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE / CAREER JOURNEY -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">04 // IT Journey</span>
+          <h2 class="section-title">Milestones & <span class="text-gradient">Projects</span></h2>
+          <p class="section-desc">Key highlights from my BSIT coursework, project builds, and vibe coding milestones.
+          </p>
+        </div>
+
+        <div class="timeline">
+          <!-- Item 1 -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <div class="timeline-marker-inner"></div>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-meta">
+                <h3 class="timeline-role">BSIT Student & Multi-Platform Developer</h3>
+                <span class="timeline-period">2024 — Present</span>
+              </div>
+              <div class="timeline-company">Information Technology Program • University</div>
+              <p class="timeline-desc">
+                Pioneering AI prompt-guided development workflows to build database-driven web dashboards, mobile
+                applications, and secure network infrastructure. Focusing on project direction, clean functionality, and
+                stress-free execution.
+              </p>
+              <div class="timeline-tags">
+                <span class="tech-tag">Vibe Coding</span>
+                <span class="tech-tag">Library System</span>
+                <span class="tech-tag">Electricity Billing</span>
+                <span class="tech-tag">SKLink Portal</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <div class="timeline-marker-inner"></div>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-meta">
+                <h3 class="timeline-role">Full-Stack & Database Solutions</h3>
+                <span class="timeline-period">2023 — 2024</span>
+              </div>
+              <div class="timeline-company">Academic & Independent Projects</div>
+              <p class="timeline-desc">
+                Developed database-driven web systems with real-time telemetry, structured CRUD operations, and
+                responsive mobile-first user interfaces.
+              </p>
+              <div class="timeline-tags">
+                <span class="tech-tag">Relational Databases</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">UI Design</span>
+                <span class="tech-tag">REST APIs</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT / SAY HELLO -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact-wrapper">
+          <div class="contact-info">
+            <div class="contact-info-header">
+              <span class="section-tag">05 // Let's Connect</span>
+              <h3 class="contact-title">Let's build clean tech <br><span class="text-gradient">without the
+                  stress</span>.</h3>
+              <p>
+                Have a project in mind, looking to collaborate on mobile apps or database dashboards, or interested in
+                vibe coding? Send me a message below!
+              </p>
+            </div>
+
+            <div class="contact-direct-cards">
+              <div class="direct-card" id="copy-email-card">
+                <div class="direct-card-icon">✉️</div>
+                <div class="direct-card-text">
+                  <h5>Direct Email (Click to Copy)</h5>
+                  <p>kurtchristianespero@gmail.com</p>
+                </div>
+              </div>
+
+              <div class="direct-card">
+                <div class="direct-card-icon">🎓</div>
+                <div class="direct-card-text">
+                  <h5>Status</h5>
+                  <p>BSIT Student • Open to Collaborations</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-side">
+            <!-- Mode Switcher -->
+            <div class="contact-mode-toggle">
+              <button class="mode-btn active" id="form-mode-btn">Friendly Form</button>
+              <button class="mode-btn" id="cli-mode-btn">Dev Terminal Mode</button>
+            </div>
+
+            <!-- Standard GUI Form -->
+            <form class="contact-form" id="standard-contact-form">
+              <div class="form-group">
+                <label class="form-label" for="contact-name">YOUR NAME</label>
+                <input type="text" class="form-input" id="contact-name" placeholder="e.g. Satoshi Nakamoto" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="contact-email">YOUR EMAIL ADDRESS</label>
+                <input type="email" class="form-input" id="contact-email" placeholder="e.g. satoshi@bitcoin.org"
+                  required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="contact-message">YOUR MESSAGE / PROJECT DETAILS</label>
+                <textarea class="form-textarea" id="contact-message"
+                  placeholder="Hi Kurt, I'd love to collaborate on..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" id="submit-transmission-btn">
+                <span>Send Message</span>
+                <span class="btn-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                  </svg>
+                </span>
+              </button>
+            </form>
+
+            <!-- Interactive CLI Terminal Simulator -->
+            <div class="cli-terminal" id="cli-contact-terminal">
+              <div class="cli-output" id="cli-output">
+                <div>[CONNECTED TO KURT CHRISTIAN ESPERO TERMINAL v3.4]</div>
+                <div>Type '<span style="color: var(--primary);">help</span>' to inspect commands or '<span
+                    style="color: var(--primary);">about</span>' to read bio.</div>
+              </div>
+              <div class="cli-prompt-line">
+                <span class="cli-prompt">kurt-espero:~$</span>
+                <input type="text" class="cli-input" id="cli-input" placeholder="type a command..." autocomplete="off">
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- SITE FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-copy">
+        © 2026 Kurt Christian Espero. Crafted with Vibe Coding & Vanilla HTML5, CSS & JS.
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub</a>
+        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="footer-link">Twitter/X</a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer-link">LinkedIn</a>
+        <a href="https://dribbble.com" target="_blank" rel="noopener noreferrer" class="footer-link">Dribbble</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING HUD DOCK -->
+  <div class="floating-hud" role="toolbar" aria-label="Quick Actions Dock">
+    <button class="hud-btn cmd-k-trigger" id="hud-search-btn" title="Command Palette (Ctrl+K)">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="11" cy="11" r="8"></circle>
+        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+      </svg>
+    </button>
+    <button class="hud-btn" id="theme-toggle-btn" title="Cycle Color Themes">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="12" r="5"></circle>
+        <path
+          d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42">
+        </path>
+      </svg>
+    </button>
+    <button class="hud-btn" id="sound-toggle-btn" title="Toggle Sci-Fi Audio Synthesizer">
+      <span id="sound-icon">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M11 5L6 9H2v6h4l5 4V5z"></path>
+          <line x1="23" y1="9" x2="17" y2="15"></line>
+          <line x1="17" y1="9" x2="23" y2="15"></line>
+        </svg>
+      </span>
+    </button>
+    <div class="hud-divider"></div>
+    <button class="hud-btn" id="back-to-top-btn" title="Scroll to Top">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <polyline points="18 15 12 9 6 15"></polyline>
+      </svg>
+    </button>
+    <div class="hud-status-indicator">
+      <span class="pulse-dot"></span>
+      <span>READY</span>
+    </div>
+  </div>
+
+  <!-- PROJECT CASE STUDY MODAL DRAWER -->
+  <div class="modal-backdrop" id="case-study-modal" role="dialog" aria-modal="true">
+    <div class="modal-container">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close Case Study Modal">✕</button>
+      <div class="modal-hero-banner">
+        <img src="./assets/project_library.jpg" alt="Project Case Study Banner" id="modal-img">
+      </div>
+      <div class="modal-body">
+        <div class="modal-header-meta">
+          <div>
+            <h2 class="modal-title" id="modal-title">Library Management System</h2>
+            <div class="modal-subtitle" id="modal-subtitle">Database & Web System</div>
+          </div>
+        </div>
+
+        <div class="modal-metrics-grid" id="modal-metrics">
+          <!-- Populated by JS -->
+        </div>
+
+        <h4 class="modal-section-h4">Project Overview</h4>
+        <p class="modal-text" id="modal-overview"></p>
+
+        <h4 class="modal-section-h4">Core Technical Challenge</h4>
+        <p class="modal-text" id="modal-challenge"></p>
+
+        <h4 class="modal-section-h4">Solution & Architecture</h4>
+        <p class="modal-text" id="modal-solution"></p>
+
+        <h4 class="modal-section-h4">Technologies & Stack</h4>
+        <div class="modal-tech-pills" id="modal-tech-stack"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- COMMAND PALETTE MODAL (CTRL+K) -->
+  <div class="palette-backdrop" id="palette-modal" role="dialog" aria-modal="true">
+    <div class="palette-box">
+      <div class="palette-input-wrap">
+        <span class="palette-search-icon">🔍</span>
+        <input type="text" class="palette-input" id="palette-search-input"
+          placeholder="Type a command or jump to section..." autocomplete="off">
+        <span class="cmd-kbd">ESC to close</span>
+      </div>
+      <div class="palette-results">
+        <div class="palette-group-title">Navigation</div>
+        <div class="palette-item" data-action="goto-about">
+          <div class="palette-item-left"><span class="palette-item-icon">👋</span><span>Go to 01. About Kurt Christian
+              Espero</span></div>
+          <span class="palette-item-shortcut">Jump</span>
+        </div>
+        <div class="palette-item" data-action="goto-projects">
+          <div class="palette-item-left"><span class="palette-item-icon">🚀</span><span>Go to 02. Featured
+              Projects</span></div>
+          <span class="palette-item-shortcut">Jump</span>
+        </div>
+        <div class="palette-item" data-action="goto-skills">
+          <div class="palette-item-left"><span class="palette-item-icon">💎</span><span>Go to 03. My Toolkit</span>
+          </div>
+          <span class="palette-item-shortcut">Jump</span>
+        </div>
+        <div class="palette-item" data-action="goto-experience">
+          <div class="palette-item-left"><span class="palette-item-icon">⏳</span><span>Go to 04. IT Journey</span></div>
+          <span class="palette-item-shortcut">Jump</span>
+        </div>
+        <div class="palette-item" data-action="goto-contact">
+          <div class="palette-item-left"><span class="palette-item-icon">✉️</span><span>Go to 05. Say Hello &
+              Contact</span></div>
+          <span class="palette-item-shortcut">Jump</span>
+        </div>
+
+        <div class="palette-group-title">Themes & Visuals</div>
+        <div class="palette-item" data-action="theme-cyber">
+          <div class="palette-item-left"><span class="palette-item-icon">🌌</span><span>Switch Theme: Cyber Aura
+              (Cyan/Violet)</span></div>
+          <span class="palette-item-shortcut">Theme</span>
+        </div>
+        <div class="palette-item" data-action="theme-matrix">
+          <div class="palette-item-left"><span class="palette-item-icon">🟢</span><span>Switch Theme: Matrix
+              Emerald</span></div>
+          <span class="palette-item-shortcut">Theme</span>
+        </div>
+        <div class="palette-item" data-action="theme-sunset">
+          <div class="palette-item-left"><span class="palette-item-icon">🌅</span><span>Switch Theme: Sunset Ruby</span>
+          </div>
+          <span class="palette-item-shortcut">Theme</span>
+        </div>
+        <div class="palette-item" data-action="theme-indigo">
+          <div class="palette-item-left"><span class="palette-item-icon">🔮</span><span>Switch Theme: Electric
+              Indigo</span></div>
+          <span class="palette-item-shortcut">Theme</span>
+        </div>
+
+        <div class="palette-group-title">System & Audio</div>
+        <div class="palette-item" data-action="toggle-sound">
+          <div class="palette-item-left"><span class="palette-item-icon">🔊</span><span>Toggle Sci-Fi Web Audio
+              Feedback</span></div>
+          <span class="palette-item-shortcut">Audio</span>
+        </div>
+        <div class="palette-item" data-action="download-cv">
+          <div class="palette-item-left"><span class="palette-item-icon">📄</span><span>Download Resume / CV
+              (PDF)</span></div>
+          <span class="palette-item-shortcut">Export</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript Entry -->
+  <script src="./script.js"></script>
+</body>
+
+</html>
